@@ -1,4 +1,10 @@
-import React from "react";
+async function getData(){
+  const res = await fetch(process.env.BASE_URL+"api/WorkList");
+  if(!res.ok) {
+    throw new Error("api/WorkList calling failed");
+  }
+  return res.json()
+}
 
 const WorkList = () => {
   return (
