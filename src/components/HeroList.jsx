@@ -17,14 +17,12 @@ export default async function HeroList() {
                 <div className="w-full text-center lg:text-left">
                   <div className="max-w-md mx-auto lg:mx-0">
                     <h2 className="mb-3 text-4xl lg:text-5xl font-bold font-heading">
-                      <span>Build &amp; Launch without</span>
-                      <span className="text-green-600">problems</span>
+                      <span>{data.title}</span>
                     </h2>
                   </div>
                   <div className="max-w-sm mx-auto lg:mx-0">
                     <p className="mb-6 text-gray-400 leading-loose">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Pellentesque efficitur nisl sodales egestas lobortis.
+                      {data.description}
                     </p>
                     <div>
                       <a
@@ -47,24 +45,24 @@ export default async function HeroList() {
                 <div className="flex flex-wrap lg:mb-4 lg:ml-6">
                   <img
                       className="w-full md:w-1/2 lg:w-1/3 h-64 p-2 object-cover rounded-4xl lg:rounded-br-none"
-                      src="https://images.unsplash.com/photo-1557804483-ef3ae78eca57?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=941&q=80"
+                      src={data.image1}
                       alt=""
                   />
                   <img
                       className="w-full md:w-1/2 lg:w-2/3 h-64 p-2 object-cover rounded-4xl lg:rounded-bl-none"
-                      src="https://images.unsplash.com/photo-1559136560-16ad036d85d3?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1050&q=80"
+                      src={data.image2}
                       alt=""
                   />
                 </div>
                 <div className="flex flex-wrap lg:mb-4 lg:mr-6">
                   <img
                       className="w-full md:w-1/2 lg:w-2/3 h-64 p-2 object-cover rounded-4xl lg:rounded-br-none"
-                      src="https://images.unsplash.com/photo-1556761175-b413da4baf72?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=967&q=80"
+                      src={data.image3}
                       alt=""
                   />
                   <img
                       className="w-full md:w-1/2 lg:w-1/3 h-64 p-2 object-cover rounded-4xl lg:rounded-bl-none"
-                      src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1190&q=80"
+                      src={data.image4}
                       alt=""
                   />
                 </div>

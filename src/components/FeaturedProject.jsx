@@ -17,16 +17,15 @@ const FeaturedProject = async () => {
               <div className="flex flex-wrap items-center -mx-4">
                 <div className="mb-12 lg:mb-0 w-full lg:w-1/2 flex px-4">
                   <div className="max-w-md">
-                  <span className="text-green-600 font-bold">
-                    Dolor sit amet consectutar
-                  </span>
+                  {/*<span className="text-green-600 font-bold">*/}
+                  {/*  Dolor sit amet consectutar*/}
+                  {/*</span>*/}
                     <h2 className="mb-6 text-4xl lg:text-5xl font-bold font-heading">
-                      Build &amp; Launch without problems
+                      {data[0].title}
                     </h2>
                     <div className="mb-6 max-w-sm">
                       <p className="text-gray-500 leading-loose">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Pellentesque efficitur nisl sodales egestas lobortis.
+                        {data[0].remark}
                       </p>
                     </div>
                     <div className="flex flex-wrap lg:-ml-5">
@@ -42,7 +41,7 @@ const FeaturedProject = async () => {
                     <div className="mb-4 lg:mb-0 w-full lg:w-2/3 px-3">
                       <img
                           className="w-full h-32 lg:h-48 object-cover rounded"
-                          src="https://images.unsplash.com/photo-1604701145653-ab3c97c63467?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80"
+                          src={data[0].image}
                           alt=""
                       />
                     </div>
